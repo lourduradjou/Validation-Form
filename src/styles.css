@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*---------------------------------------------  outer arrangements ----------------------------------------*/
+body {
+	max-width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../images/the_jungle_book_hd.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	font-family: Poppins, 'sans-serif';
+	overflow: hidden;
+	color: rgb(0, 0, 0);
+}
+
+.container {
+	background-color: rgba(90, 90, 90, 0.7);
+	/* box-shadow: 20px 20px 0px rgba(228, 109, 109,0.9); */
+	max-width: 100%;
+	border-radius: 5px;
+	border-bottom: 4px solid black;
+	transition: 0.5s ease-in-out;
+	width: 400px;
+	
+}
+/*------------------------------------------------ end of outer stlying --------------------------------------------------*/
+
+/*------------------------------------------------- form stylying ------------------------------------------------------------*/
+.container:hover {
+	background-color: #a7c957;
+}
+
+.container input:hover::placeholder {
+	color: white;
+}
+.container:hover .head {
+	border-bottom: 2px solid #3c1642;
+}
+/*------------------------------------------------- form stylying end------------------------------------------------------------*/
+
+/*------------------------------------------------- header stylying ------------------------------------------------------------*/
+.head {
+	margin-bottom: 20px;
+	border-bottom: 2px solid transparent;
+}
+
+.head h1 {
+	margin: 0;
+	text-align: center;
+}
+/*------------------------------------------------- Header stylying end------------------------------------------------------------*/
+
+.form {
+	padding: 30px 40px;
+}
+.inside-form {
+	margin-bottom: 5px;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.inside-form label {
+	display: inline-block;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+/*------------------------------------------------- input stylying starts------------------------------------------------------------*/
+.inside-form input {
+	border: 2px solid rgb(255, 255, 255);
+	outline: none;
+	display: block;
+	border-radius: 4px;
+	font-size: 16px;
+	padding: 10px;
+	margin-bottom: 5px;
+	width: 100%;
+	transition: 0.3s ease;
+}
+.inside-form input:hover {
+	outline: none;
+	border-color: #414833;
+	background-color: #124559;
+	color: white;
+}
+
+.inside-form.success input {
+	border-color: #588157;
+}
+
+.inside-form.error input {
+	border-color: #bc4749;
+}
+
+.inside-form i {
+	visibility: hidden;
+	position: absolute;
+	top: 47px;
+	right: 10px;
+}
+
+.inside-form.success i.fa-solid.fa-circle-check {
+	visibility: visible;
+	color: #588157;
+}
+
+.inside-form.error i.fa-solid.fa-circle-exclamation {
+	visibility: visible;
+	color: #bc4749;
+}
+
+/*------------------------------------------------- input stylying end------------------------------------------------------------*/
+
+/*--------------------------------error message start---------------*/
+.inside-form small {
+	color: #bc4749;
+	position: absolute;
+	left: 0px;
+	bottom: -5px;
+	visibility: hidden;
+}
+
+.inside-form.error small {
+	visibility: visible;
+}
+/*--------------------------------error message end---------------*/
+
+/*------------------------------------------------- button stylying starts------------------------------------------------------------*/
+.button {
+	width: 100%;
+}
+.form button {
+	width: 100%;
+	display: block;
+	font-size: 20px;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 4px;
+	outline: none;
+	border: none;
+	background-color: #bc4749;
+	color: white;
+}
+
+button:hover {
+	background-color: #124559;
+	color: white;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+/*------------------------------------------------- button stylying end------------------------------------------------------------*/
